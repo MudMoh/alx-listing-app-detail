@@ -7,9 +7,18 @@ import PropertyCard from "../components/common/Card";
 
 const filterLabels = ["Top Villa", "Self Checkin", "Pet Friendly", "Pool"];
 
+/*************  ✨ Windsurf Command ⭐  *************/
+/**
+ * The Home component renders the main page of the application.
+ * It consists of three sections: Hero, Filter, and Listing.
+ * The Hero section displays a background image with a call-to-action.
+ * The Filter section displays a list of filter labels that can be clicked.
+ * The Listing section displays a list of properties in a grid layout.
+ */
+/*******  7bd6bcbe-3007-4b18-8084-285e422b862f  *******/
 const Home = () => {
   return (
-    <Layout>
+    <>
       {/* Hero Section */}
       <section className="relative h-64 bg-cover bg-center" style={{ backgroundImage: `url(${backgroundImage.src})` }}>
         <div className="absolute inset-0 bg-black opacity-50"></div>
@@ -38,7 +47,7 @@ const Home = () => {
           <PropertyCard key={property.name} property={property} />
         ))}
       </section>
-    </Layout>
+    </>
   );
 };
 
